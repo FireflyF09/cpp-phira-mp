@@ -14,7 +14,7 @@ jobs:
         arch: [amd64, arm64, armhf]
         include:
           - arch: amd64
-            triplet: x86_64-linux-gnu
+            triplet: amd64-linux-gnu
             compiler: g++
           - arch: arm64
             triplet: aarch64-linux-gnu
@@ -29,6 +29,7 @@ jobs:
       - name: Install compiler & deps
         run: |
           sudo apt-get update
+          sudo apt-get purge needrestart
           sudo apt-get install -y uuid-dev g++-${{ matrix.triplet }}
 
       - name: Build
