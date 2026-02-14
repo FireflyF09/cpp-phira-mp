@@ -33,10 +33,7 @@ jobs:
           sudo apt-get install -y uuid-dev g++-${{ matrix.triplet }}
 
       - name: Build
-        run: |
-          make CXX=${{ matrix.compiler }} \
-               CXXFLAGS="-O2 -I/usr/include/${{ matrix.triplet }}" \
-               LDFLAGS="-L/usr/lib/${{ matrix.triplet }}"
+        run: make
 
       - name: Upload binary files
         uses: actions/upload-artifact@v4
