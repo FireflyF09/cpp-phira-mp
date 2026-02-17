@@ -605,6 +605,10 @@ SOFTWARE.
 - **Lua Community** - For the powerful scripting language
 - **Open Source Contributors** - For various libraries and tools used
 - **HyperSynapseNetwork** - For project sponsorship and development
+- **tphira-mp** - provided a large amount of reference English for this project
+- **jphira-mp** - provided a large amount of reference English for this project
+
+
 
 ---
 
